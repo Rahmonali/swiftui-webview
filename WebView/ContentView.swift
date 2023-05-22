@@ -8,14 +8,32 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var isShowingFullScreen = false
+    @State var isShowingAlert = false
+    
     var body: some View {
+        
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Button {
+                isShowingFullScreen = true
+            } label: {
+                Text("Open Web Page")
+                
+            }
+            .fullScreenCover(isPresented: $isShowingFullScreen) {
+                isShowingAlert = true
+            } content: {
+                FullScreenCoverView()
+            }
         }
-        .padding()
+        .alert(isPresented: $isShowingAlert) {
+            Alert(
+                title: Text("Title"),
+                message: Text("Message"),
+                dismissButton: .default(Text("OK"), action: {})
+            )
+        }
     }
 }
 
