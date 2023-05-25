@@ -16,7 +16,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A14B720D2A16715A00C6B147 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A14B722B2A1B73D200C6B147 /* FullScreenCoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenCoverView.swift; sourceTree = "<group>"; };
 		A1BAE30829E5652400A1A4F7 /* WebView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1BAE30B29E5652400A1A4F7 /* WebViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewApp.swift; sourceTree = "<group>"; };
@@ -56,7 +55,6 @@
 		A1BAE30A29E5652400A1A4F7 /* WebView */ = {
 			isa = PBXGroup;
 			children = (
-				A14B720D2A16715A00C6B147 /* Info.plist */,
 				A1BAE30B29E5652400A1A4F7 /* WebViewApp.swift */,
 				A1BAE30D29E5652400A1A4F7 /* ContentView.swift */,
 				A14B722B2A1B73D200C6B147 /* FullScreenCoverView.swift */,
